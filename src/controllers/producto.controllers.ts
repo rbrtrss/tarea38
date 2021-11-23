@@ -23,7 +23,7 @@ class controlProductos {
     const datos = req.body;
     const agregado = await productos.add(datos);
     res.json({
-      msg: `Producto ${agregado._id} agregado exitosamente`,
+      msg: `Producto agregado exitosamente`,
       producto: agregado,
     });
   }

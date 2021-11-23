@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p -r dotenv/config ./tsconfig.json",
     "dev": "nodemon -r dotenv/config --exec ts-node ./src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +33,7 @@
     "@types/express": "^4.17.13",
     "@types/express-session": "^1.17.4",
     "@types/graphql": "^14.5.0",
+    "@types/jest": "^27.0.3",
     "@types/nodemailer": "^6.4.4",
     "@types/nodemon": "^1.19.1",
     "@types/passport": "^1.0.7",
@@ -42,8 +43,11 @@
     "@typescript-eslint/parser": "^5.3.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.3.1",
+    "node-mocks-http": "^1.11.0",
     "nodemon": "^2.0.14",
     "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0"
   }
 }

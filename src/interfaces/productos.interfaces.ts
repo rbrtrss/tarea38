@@ -1,6 +1,6 @@
 export interface ProductoI {
   _id: string;
-  timestamp: number;
+  timestamp: string;
   nombre: string;
   descripcion: string;
   codigo: string;
